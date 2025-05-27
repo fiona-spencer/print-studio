@@ -1,3 +1,6 @@
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react-swc'
+
 export default defineConfig({
   plugins: [react()],
   server: {
@@ -9,8 +12,8 @@ export default defineConfig({
     },
   },
   build: {
-    outDir: 'client/dist',
+    outDir: 'dist', // put output in client/dist
     emptyOutDir: true,
   },
-  base: '/',
+  base: '/', // only change if hosting from a subpath like /static/
 })

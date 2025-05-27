@@ -16,6 +16,15 @@ export default {
           '100%': { opacity: 1, transform: 'translateY(0)' },
         },
       },
+       fontFamily: {
+        jost: ['Jost', 'sans-serif'], // 👈 add this
+      },
+       colors: {
+        title: 'var(--color-title)',
+        orangeAccent: 'var(--color-orange)',
+        bgBase: 'var(--color-bg)',
+        textBase: 'var(--color-text)',
+      },
     },
   },
   plugins: [
